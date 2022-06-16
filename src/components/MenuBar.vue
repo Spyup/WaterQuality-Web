@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-white shadow w-64 my-2">
-        <ul class="sidenav">
+    <div class="bg-white shadow h-screen w-auto">
+        <ul>
             <li >
                 <a href="#" class="block p-4 text-grey-100 font-bold hover:border-purple-700 hover:bg-gray-200 border-r-4">Home</a>
             </li>

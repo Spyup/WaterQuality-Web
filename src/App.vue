@@ -1,27 +1,30 @@
 <template>
-  <MenuBar/>
+  <div class="grid grid-cols-6">
+      <div class="">
+        <MenuBar/>
+      </div>
+      <div class="col-span-5">
+        <ShowPhoto/>
+      </div>
+  </div>
 </template>
 
 <script>
 import MenuBar from './components/MenuBar.vue'
+import ShowPhoto from './components/ShowPhoto.vue'
 import "./assets/tailwindcss.css"
 
 export default {
   name: 'App',
   components: {
-    MenuBar
+    MenuBar,
+    ShowPhoto
   }
 }
 </script>
 
 <style>
-/*
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}*/
+.sidenav {
+  margin:0px;
+}
 </style>
