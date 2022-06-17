@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js}'],
+  purge: ['./index.html', './src/**/*.{vue,js}','./node_modules/tw-elements/dist/js/**/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -14,5 +14,7 @@ module.exports = {
       backgroundColor: ['active'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tw-elements/dist/plugin')
+  ],
 }

@@ -1,25 +1,23 @@
 <template>
-  <div class="grid grid-cols-6">
-      <div class="">
-        <MenuBar/>
-      </div>
-      <div class="col-span-5">
-        <ShowPhoto/>
-      </div>
+  <div class="flex w-auto">
+    <div class="">
+      <MenuBar/>
+    </div>
+    <div class="w-full h-screen">
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-import MenuBar from './components/MenuBar.vue'
-import ShowPhoto from './components/ShowPhoto.vue'
 import "./assets/tailwindcss.css"
+import MenuBar from "./components/MenuBar.vue";
 
 export default {
   name: 'App',
   components: {
     MenuBar,
-    ShowPhoto
-  }
+  },
 }
 </script>
 
